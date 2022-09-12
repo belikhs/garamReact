@@ -1,0 +1,89 @@
+.productWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4vw 0;
+}
+
+.productWrap{
+    width: min(100%, 1280px);
+    display: flex;
+    justify-content: center;
+}
+
+.productImg{
+    width: min(38vw, 500px);
+    height: min(38vw, 500px);
+}
+
+.productImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.productText{
+    width: min(39%, 500px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productText > div{
+    margin: 1.5vw 0;
+}
+
+.productQuantity{
+    display: flex;
+    justify-content: space-around;
+}
+
+.quantitySubtract{
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #DEDEDE;
+    cursor: pointer;
+}
+
+.quantityAdd{
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #DEDEDE;
+    cursor: pointer;
+}
+
+.productCount{
+    margin: 0 16px;
+}
+
+.buttonWrap{
+    width: min(100%, 1280px);
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+.buttonStyle{
+    width: min(23%, 256px);
+    line-height: 40px;
+    border-radius: 8px;
+    background: #007AAA;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1023px) {
+    .productWrapper{
+        padding-top: calc(4vw + 104px);
+    }
+}
+@media screen and (max-width:500px) {
+    .productWrapper{
+        padding: 10vw;
+        padding-top: calc(10vw + 104px);
+    }
+}
